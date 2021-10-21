@@ -42,7 +42,7 @@ def  binari_search():
             s = m + 1 
 
     print("Die gesuchte Zahl ist nicht enthalten!")
-
+#print (type(arr))
 print ("Interativ oder binaer? (tippe I/B)")
 i = input()
 if i == "B":
