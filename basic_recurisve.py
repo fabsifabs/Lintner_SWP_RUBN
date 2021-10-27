@@ -1,9 +1,31 @@
 
 
-def factorial(i):
-    while i >= 0:
-        i = i+(i-1)
+def sumIte(i):
+    x = i
+    while i > 0:
+        x = x+(i-1)
         i = i-1
-    print(i)
+    return x
 
-factorial(2)
+def sumRec(i):
+    if i == 1:
+        return 1
+
+    return i + sumRec(i-1)
+    
+
+def powInt(i,x):
+    res = i
+    for _ in range(1,x):
+        res *= i
+    return res
+
+def powRec(i,x):
+    if i == 0:
+        return 1
+    elif i == 1:
+        return i
+    else:
+        return i * powRec(i, x-1)
+
+print(powRec(5,3))
