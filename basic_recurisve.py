@@ -20,12 +20,12 @@ def powInt(i,x):
         res *= i
     return res
 
-def powRec(i,x):
-    if i == 0:
+def powRec(i , x):
+    if x == 0:
         return 1
-    elif i == 1:
+    elif x == 1:
         return i
     else:
         return i * powRec(i, x-1)
 
-print(powRec(5,3))
+print(powRec(4,2))
