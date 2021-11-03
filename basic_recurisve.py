@@ -1,4 +1,4 @@
-
+import math
 
 def sumIte(i):
     x = i
@@ -12,6 +12,18 @@ def sumRec(i):
         return 1
 
     return i + sumRec(i-1)
+
+def fakIte(i):
+    x = 1
+    while i > 1: 
+        x = x*(i)
+        i = i-1
+    return x
+
+def fakRec(i):
+    if i == 1:
+        return 1
+    return i * fakRec(i-1)
     
 
 def powInt(i,x):
@@ -27,5 +39,3 @@ def powRec(i , x):
         return i
     else:
         return i * powRec(i, x-1)
-
-print(powRec(4,2))
