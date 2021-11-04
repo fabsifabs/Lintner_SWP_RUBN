@@ -41,4 +41,4 @@ def powRec(i , x):
         return i * powRec(i, x-1)
 
 
-print(sumIte(35),sumRec(35))
+print(sumIte(200),sumRec(1000))
