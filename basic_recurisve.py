@@ -39,3 +39,6 @@ def powRec(i , x):
         return i
     else:
         return i * powRec(i, x-1)
+
+
+print(sumIte(35),sumRec(35))
