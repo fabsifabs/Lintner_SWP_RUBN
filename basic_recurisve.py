@@ -79,7 +79,8 @@ t3=time.perf_counter_ns()-b
 print("Time sumEnd:", t3 ,"ns")
 
 print("Ite:", t1,"ns", "    Rec: ", t2-t1, "ns", "  End: ",t2-t3, "ns" )
-
+"""
 print(fakIte(300),"\n",fakRec(300),"\n",fakEnd(300))
 
 print(powIte(30,3),"\n",powRec(30,3),"\n",powEnd(30,3))
+"""
