@@ -5,8 +5,9 @@ import time
 def sumIte(i):
     x = i
     while i > 0:
-        x = x+(i-1)
         i = i-1
+        x = x+(i)
+       
     return x
 
 def sumRec(i):
@@ -76,7 +77,7 @@ print("Time sumRec:", t2 ,"ns")
 b =time.perf_counter_ns()
 print("sumEnd:",sumEnd(400))
 t3=time.perf_counter_ns()-b
-print("Time sumEnd:", t3 ,"ns")
+print("Time sumEnd:", t3 ,"ns")``
 
 print("Ite:", t1,"ns", "    Rec: ", t2-t1, "ns", "  End: ",t2-t3, "ns" )
 """
